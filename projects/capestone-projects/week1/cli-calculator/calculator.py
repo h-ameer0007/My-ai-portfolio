@@ -5,6 +5,22 @@ import math  # imports the fuctions from math module
 # defines the addition operation
 
 
+def is_valid_float_string(s):
+    if not s:
+        return False
+    if s.startswith("-"):
+        temp_s = s[1:]
+    else:
+        temp_s = s
+
+    dot_count = temp_s.count(".")
+
+    if dot_count <= 1 and temp_s.replace(".", "", 1).isdigit():
+        return True
+    else:
+        return False
+
+
 def add():
     return x + y
 
@@ -40,33 +56,41 @@ while True:
     print("4.Devide")     # prints the devition option
     print("5.Quit")       # prints the quit option
     print("Select an option.")  # prints the selction operation line
-    option_selection = input("")  # takes the user input from the selction menu
+    # takes the user input from the selction menu
+    option_selection_str = input("")
     # checks for if the input is a numeric value and if is in menu
-    if option_selection.isdigit() and (0 < int(option_selection) <= 5):
+    if option_selection_str.isdigit() and (0 < int(option_selection_str) <= 5):
         # the input is converted into an intiger
-        if int(option_selection) == 5:
+        option_selection = int(option_selection_str)
+        if option_selection == 5:
             # ptints the quiting message
             print("Quiting the program... Goodbye.")
             # breaks the loop
             break
         # asks for first number
-        First_number = input("First Number : ")
+        while True:
 
-        if First_number.isdigit():  # checks if it is a numeric value
-            # converts it into a number with decimal point
-            x = float(First_number)
-           # if the value provided is other then a number
-        else:  # prints the error message
-            print("Please provide a number.")
-          # asks for second number
-        Second_number = input("Second Number : ")
+            First_number_str = input("First Number : ")
+            # checks if it is a numeric value
+            if is_valid_float_string(First_number_str):
+                # converts it into a number with decimal point
+                x = float(First_number_str)
+                break
+              # if the value provided is other then a number
+            else:  # prints the error message
+                print("Please provide a number.")
+            # asks for second number
+        while True:
 
-        if Second_number.isdigit():  # checks if it is a numeric value
-            # converts it into a number with decimal point
-            y = float(Second_number)
-         # if the value provided is other then a number
-        else:
-            print("Please provide a number.")  # prints the error message
+            Second_number_str = input("Second Number : ")
+            # checks if it is a numeric value
+            if is_valid_float_string(Second_number_str):
+                # converts it into a number with decimal point
+                y = float(Second_number_str)
+                break
+            # if the value provided is other then a number
+            else:
+                print("Please provide a number.")  # prints the error message
         # checks if the additoin option is selected
         if int(option_selection) == 1:
             # calls the addtion function and prints the result
