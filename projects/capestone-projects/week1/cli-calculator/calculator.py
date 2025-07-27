@@ -1,7 +1,5 @@
 # a simple calculator made with python
 
-import math  # imports the fuctions from math module
-
 # defines the addition operation
 
 
