@@ -89,14 +89,14 @@ while True:
         if int(option_selection) == 1:
             # calls the addtion function and prints the result
             print(f" >> {x} + {y} =", add(x, y), "<<")
-        if int(option_selection) == 2:
+        elif int(option_selection) == 2:
             # calls the subtraction function and prints the result
             print(f" >> {x} - {y} =", subtract(x, y), "<<")
-        if int(option_selection) == 3:
+        elif int(option_selection) == 3:
             # calls the multiplication function and prints the result
             print(f" >> {x} * {y} =", multiply(x, y), "<<")
 
-        if int(option_selection) == 4:
+        elif int(option_selection) == 4:
             # checks if the second number for divition is 0.
             if int(y) == 0:
                 # if the number is devided by 0 the print the error message.
