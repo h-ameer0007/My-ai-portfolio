@@ -21,31 +21,27 @@ def is_valid_float_string(s):
         return False
 
 
-def add():
-    return x + y
+def add(num1, num2):
+    return num1+num2
 
 # defines the subtraction operation
 
 
-def subtract():
-    return x-y
+def subtract(num1, num2):
+    return num1-num2
 
 # defines the multiplication operation
 
 
-def multiply():
-    return x*y
+def multiply(num1, num2):
+    return num1*num2
 
 # defines the devision operation
 
 
-def devide():
-    return x/y
+def devide(num1, num2):
+    return num1/num2
 
-
-# initializes the variables for operations
-x = 0
-y = 0
 
 # an open loop that prints menu of selection and allows user to continue operations untill quit.
 while True:
@@ -94,13 +90,13 @@ while True:
         # checks if the additoin option is selected
         if int(option_selection) == 1:
             # calls the addtion function and prints the result
-            print(f" >> {x} + {y} =", add(), "<<")
+            print(f" >> {x} + {y} =", add(x, y), "<<")
         if int(option_selection) == 2:
             # calls the subtraction function and prints the result
-            print(f" >> {x} - {y} =", subtract(), "<<")
+            print(f" >> {x} - {y} =", subtract(x, y), "<<")
         if int(option_selection) == 3:
             # calls the multiplication function and prints the result
-            print(f" >> {x} * {y} =", multiply(), "<<")
+            print(f" >> {x} * {y} =", multiply(x, y), "<<")
 
         if int(option_selection) == 4:
             # checks if the second number for divition is 0.
@@ -110,7 +106,7 @@ while True:
                 continue
             else:
                 # if not zero then calls the devision funtion and prints the result.
-                print(f" >> {x} / {y} =", devide(), "<<")
+                print(f" >> {x} / {y} =", devide(x, y), "<<")
     # if the provided input is not a numeric value then it prints the error message and keeps the loop running.
     else:
         print("Please select a number from the options.")
