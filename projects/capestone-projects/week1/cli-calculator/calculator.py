@@ -68,7 +68,7 @@ while True:
             # checks if it is a numeric value
             if is_valid_float_string(First_number_str):
                 # converts it into a number with decimal point
-                x = float(First_number_str)
+                num1 = float(First_number_str)
                 break
               # if the value provided is other then a number
             else:  # prints the error message
@@ -80,7 +80,7 @@ while True:
             # checks if it is a numeric value
             if is_valid_float_string(Second_number_str):
                 # converts it into a number with decimal point
-                y = float(Second_number_str)
+                num2 = float(Second_number_str)
                 break
             # if the value provided is other then a number
             else:
@@ -88,23 +88,23 @@ while True:
         # checks if the additoin option is selected
         if int(option_selection) == 1:
             # calls the addtion function and prints the result
-            print(f" >> {x} + {y} =", add(x, y), "<<")
+            print(f" >> {num1} + {num2} =", add(num1, num2), "<<")
         elif int(option_selection) == 2:
             # calls the subtraction function and prints the result
-            print(f" >> {x} - {y} =", subtract(x, y), "<<")
+            print(f" >> {num1} - {num2} =", subtract(num1, num2), "<<")
         elif int(option_selection) == 3:
             # calls the multiplication function and prints the result
-            print(f" >> {x} * {y} =", multiply(x, y), "<<")
+            print(f" >> {num1} * {num2} =", multiply(num1, num2), "<<")
 
         elif int(option_selection) == 4:
             # checks if the second number for divition is 0.
-            if int(y) == 0:
+            if int(num2) == 0:
                 # if the number is devided by 0 the print the error message.
                 print("Can not devide by zero.")
                 continue
             else:
                 # if not zero then calls the devision funtion and prints the result.
-                print(f" >> {x} / {y} =", devide(x, y), "<<")
+                print(f" >> {num1} / {num2} =", devide(num1, num2), "<<")
     # if the provided input is not a numeric value then it prints the error message and keeps the loop running.
     else:
         print("Please select a number from the options.")
