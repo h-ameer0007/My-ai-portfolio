@@ -1,22 +1,11 @@
-# a simple calculator made with python
-
-# defines the addition operation
+<< << << < HEAD
 
 
-def is_valid_float_string(s):
-    if not s:
-        return False
-    if s.startswith("-"):
-        temp_s = s[1:]
-    else:
-        temp_s = s
+== == == =
+# CLI Calculator
 
-    dot_count = temp_s.count(".")
-
-    if dot_count <= 1 and temp_s.replace(".", "", 1).isdigit():
-        return True
-    else:
-        return False
+# defines add function
+>>>>>> > majorupdate/newtry-except -implimentation
 
 
 def add(num1, num2):
