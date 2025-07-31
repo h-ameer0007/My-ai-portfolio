@@ -1,4 +1,4 @@
-# CLI Calculator
+# A Robust CLI Calculator.
 
 # defines add function
 def add(num1, num2):
