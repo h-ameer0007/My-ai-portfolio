@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 << << << < HEAD
 # a simple calculator made with python
 
@@ -22,6 +23,9 @@ def is_valid_float_string(s):
 
 == == == =
 # CLI Calculator
+=======
+# A Robust CLI Calculator
+>>>>>>> majorupdate/newtry-except-implimentation
 
 # defines add function
 >>>>>> > majorupdate/newtry-except -implimentation
