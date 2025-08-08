@@ -1,17 +1,61 @@
-# Capestone project for week 1
-# Cli-calculator
---------- CLI Calculator--------
-# This is a Calculator script that will be executed in the Command Line
-# This is a simple Calculator script that can perform 4 basic operations
-# Asks for user input to chose the operation to be performed 
-# Then asks for the user to give the numbers to be used to perform the calculation
-# Error handelling added
-This calculator checks if the user provided input is a digit and if not if returns with an error message to provide a number.
-it is consistent with the option selection range with numbers. if the number is outside of the range it returns with a message 
-to select a number from the range. the loop keeps providing with the menu selection.
-it first checks if the user has selected the quit command and quits the program with a message. 
-If the user selects a number to perform an opration it asks for the numbers to be used to perform the opration.
-If the user does not select the option to quit, the program keeps running to allow user to perform multiple oprations one after the other untill quit.
-It handles the devide by zero error as well by displaying a message "can not devide by zero" and then displays the selection menu to continue.
+# CLI Calculator
+A simple, robust command-line calculator written in Python. This tool allows users to perform basic arithmetic operations through an interactive menu. It features error handling to ensure a smooth user experience.
+
+## Features
+
+Addition (+): Adds two numbers.
+
+Subtraction (-): Subtracts one number from another.
+
+Multiplication (*): Multiplies two numbers.
+
+Division (/): Divides one number by another and includes a check to prevent division by zero errors.
+
+Robust Input: Handles non-numeric input gracefully, prompting the user to try again.
+
+Interactive Menu: Guides the user through the process of selecting an operation and entering numbers.
+
+## Installation and Requirements
+This project is a single Python script and has no external dependencies.
+
+### Requirements
+
+* **Python 3.x**: The script is written in Python 3.
+
+## How to Run
+Download the calculator.py file to your local machine.
+
+1. Open your terminal or command prompt.
+
+2. Navigate to the directory where you saved the file.
+
+3. Run the script using the following command:
+
+  ```bash
+  python calculator.py
+  ```
 
 
+4. The interactive menu will appear, and you can begin performing calculations.
+
+## How to Use
+
+When you run the script, you'll be presented with a menu of operations.
+
+1. **Select an Operation:** 
+   * Type the number corresponding to the operation you want to perform (e.g., 1 for Add, 4 for Divide).
+
+2.  **Enter Numbers:**
+    * The program will prompt you to enter the first and second numbers.
+
+3. **View Result:**
+   * The result of the operation will be displayed.
+
+4. **Continue or Exit:**
+   * After each calculation, the menu will reappear, allowing you to perform another operation or select 5 to exit the program.
+
+## Contributing
+Suggestions for improvements and bug fixes are welcome! Feel free to open an issue or submit a pull request.
+
+## Author
+ * Ameer Hamza
