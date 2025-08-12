@@ -2,13 +2,13 @@
 # Objective: Create a Python script that renames files in a specified directory based on a pattern or a new prefix/suffix.
 from pathlib import Path
 import shutil
+
+
 #  Generate a folder report
-
-
 def report_generator(source_folder_path):
     source_folder = Path(source_folder_path)
-    Report_file = Path(source_folder / "Report.txt")
-    with open(Report_file, "w") as file:
+    report_file = Path(source_folder / "report.txt")
+    with open(report_file, "w") as file:
         file.write(f"----Directory Content.----\n\n")
         try:
             for item in source_folder.iterdir():
@@ -24,6 +24,8 @@ def report_generator(source_folder_path):
         except Exception as e:
             # A generic exception catch is good for unexpected errors.
             print(f"\nAn unexpected error occurred during renaming: {e}")
+
+# Renane and move the files to a new folder inside the source folder with the same as the string appended to the file names.
 
 
 def file_renamer(source_folder_path, new_name):
@@ -58,6 +60,8 @@ def file_renamer(source_folder_path, new_name):
     except FileExistsError:
         print(f"That file does not exist. ")
 
+# Safely duplicates a folder and creates a backup into a given directory.
+
 
 def Safe_duplicate(source_folder_path, destination_folder_path):
     source_folder = Path(source_folder_path)
@@ -76,6 +80,7 @@ def Safe_duplicate(source_folder_path, destination_folder_path):
         print(f"An unexpected error occurred: {e}")
 
 
+# A loop to keep displaying the menu.
 while True:
     print("--- File System Tool ---")
     print("1. Generate a folder report")
