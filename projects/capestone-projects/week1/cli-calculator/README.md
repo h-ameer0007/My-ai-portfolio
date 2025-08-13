@@ -11,6 +11,8 @@ Multiplication (*): Multiplies two numbers.
 
 Division (/): Divides one number by another and includes a check to prevent division by zero errors.
 
+Square_root: Takes and number and outputs the square_root.
+
 Robust Input: Handles non-numeric input gracefully, prompting the user to try again.
 
 Interactive Menu: Guides the user through the process of selecting an operation and entering numbers.
