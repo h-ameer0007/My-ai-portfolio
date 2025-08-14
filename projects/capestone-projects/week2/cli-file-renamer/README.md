@@ -12,11 +12,11 @@ This tool is a single Python script and does not require any special installatio
 ## How to Run
 
 1.  Open your terminal or command prompt.
-2.  Navigate to the directory where you saved `file_utility.py`.
+2.  Navigate to the directory where you saved `main.py`.
 3.  Run the script using the following command:
 
     ```bash
-    python file_utility.py
+    python main.py
     ```
 
 4.  Follow the on-screen menu to select an operation.
