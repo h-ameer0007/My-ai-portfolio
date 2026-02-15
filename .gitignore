@@ -1,1 +1,8 @@
 /projects/Venus
+
+# YouTube Optimizer
+youtube_optimizer/.env
+youtube_optimizer/data/youtube_optimizer.db
+youtube_optimizer/data/exports/
+__pycache__/
+*.pyc
